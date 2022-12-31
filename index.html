@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <!--css file-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--top-->
+    <header>
+        <div class="container container-header">
+            <div class="header-left">
+                <div class="logo">Logo</div>
+            </div>
+            <div class="header-Right">
+                <div class="header-cart" id="cartIdDisplayBtn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="numberofCart" id="numberofCartId">0</div>
+                </div>
+                <div class="header-login" id="header-loginId">
+                    Login
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!---Cart Section-->
+    <section id="cartId" class="card-hidden">
+        <div class="cart-container">
+            <div class="cart-close">
+                <button class="btn" id="cart-close-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <p class="cart-text">Cart</p>
+            </div>
+            <div class="cart-body" id="cart-product-bodyID">
+                <!-- <div class="cart-product">
+                    <div class="cart-product-left">
+                        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"/>
+                    </div>
+                    <div class="cart-product-right">
+                        <h3>men's clothing</h3>
+                        <p>$30</p>
+                        <div class="cart-product-quantiy">
+                            <div class="cart-product-minus">-</div>
+                            <div class="cart-product-num">1</div>
+                            <div class="cart-product-plus">+</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div id="productTotalQty-TotalPrice">
+                <div class="cart-total">
+                    <div class="cart-total-payment">
+                        Total : <span id="cart-total-paymentId">100</span>
+                    </div>
+                    <div class="cart-total-qty">
+                        Qty : <span id="cart-qty-qtyId">5</span>
+                    </div>
+                </div>
+                <div class="cart-payment-btn">
+                    Payment
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Product section-->
+    <main>
+        <div class="container container-main">
+
+            <!--List of Product-->
+            <div class="product-container" id="product-List">
+                <!--render Product-->
+            </div>
+
+        </div>
+
+        <div class="hidden" id="displayIframe">
+            <iframe src="" id="login-sign-container" class="">
+                <!--login and signup page-->
+            </iframe>
+        </div>
+        
+
+    </main>
+
+
+
+    <!--js file-->
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
